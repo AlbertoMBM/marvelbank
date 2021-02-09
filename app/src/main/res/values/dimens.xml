@@ -1,0 +1,35 @@
+<resources>
+    <dimen name="margin_padding_size_zero">0dp</dimen>
+    <dimen name="margin_padding_size_very_small">2dp</dimen>
+    <dimen name="margin_padding_size_very_xsmall">4dp</dimen>
+    <dimen name="margin_padding_size_small">6dp</dimen>
+    <dimen name="margin_padding_size_xsmall">8dp</dimen>
+    <dimen name="margin_padding_size_xxsmall">10dp</dimen>
+    <dimen name="margin_padding_size_xxxsmall">12dp</dimen>
+    <dimen name="margin_padding_size_xxxxsmall">14dp</dimen>
+    <dimen name="margin_padding_size_medium">16dp</dimen>
+    <dimen name="margin_padding_size_xmedium">20dp</dimen>
+    <dimen name="margin_padding_size_xxmedium">22dp</dimen>
+    <dimen name="margin_padding_size_large">24dp</dimen>
+    <dimen name="margin_padding_size_xlarge">28dp</dimen>
+    <dimen name="margin_padding_size_xxlarge">32dp</dimen>
+    <dimen name="margin_padding_size_xxxlarge">40dp</dimen>
+    <dimen name="margin_padding_size_xxxxlarge">44dp</dimen>
+    <dimen name="margin_padding_size_main">120dp</dimen>
+
+    <dimen name="text_size_micro_micro">10sp</dimen>
+    <dimen name="text_size_micro">12sp</dimen>
+    <dimen name="text_size_small">14sp</dimen>
+    <dimen name="text_size_medium">16sp</dimen>
+    <dimen name="text_size_xmedium">18sp</dimen>
+    <dimen name="text_size_large">20sp</dimen>
+    <dimen name="text_size_xlarge">24sp</dimen>
+    <dimen name="text_size_xxlarge">28sp</dimen>
+
+    <dimen name="radius_size_small">4dp</dimen>
+    <dimen name="radius_size_xsmall">6dp</dimen>
+    <dimen name="radius_size_medium">8dp</dimen>
+    <dimen name="radius_size_xmedium">10dp</dimen>
+
+    <dimen name="email_image_size">32dp</dimen>
+</resources>

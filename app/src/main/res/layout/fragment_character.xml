@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/margin_padding_size_medium"
+        tools:context=".ui.character.CharacterFragment">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:background="@color/marvelDarkGray"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/name"
+            style="@style/TextTitleCharacter.24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingVertical="@dimen/margin_padding_size_xsmall"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/description"
+            style="@style/TextDescriptionCharacter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/margin_padding_size_xsmall"
+            android:paddingHorizontal="@dimen/margin_padding_size_xsmall"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/name"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/dateTitle"
+            style="@style/TextDescriptionCharacter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_padding_size_xsmall"
+            android:text="@string/modified"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/date"
+            app:layout_constraintTop_toBottomOf="@+id/description"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/date"
+            style="@style/TextDescriptionCharacter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_padding_size_xsmall"
+            app:layout_constraintStart_toEndOf="@id/dateTitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/description"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/comicsTitle"
+            style="@style/TextTitleCharacter.20"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_padding_size_xsmall"
+            android:text="@string/comics"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/date"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/comics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintTop_toBottomOf="@+id/comicsTitle"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/seriesTitle"
+            style="@style/TextTitleCharacter.20"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/series"
+            android:padding="@dimen/margin_padding_size_xsmall"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/comics"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/series"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintTop_toBottomOf="@+id/seriesTitle"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

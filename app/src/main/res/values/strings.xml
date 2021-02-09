@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">MarvelCharacters</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_contact_me">Contact me</string>
+    <string name="character_image">Character image</string>
+    <string name="read_more">Read more</string>
+    <string name="contact_info">Contact { \n\t\t name: Alberto, \n\t\t last_name: Martín-Benito Muñoz,
+        \n\t\t occupation: Android developer, \n\t\t hobbies: Basketball and videogames\n }</string>
+    <string name="comics">Comics</string>
+    <string name="series">Series</string>
+    <string name="email">alberto.martin.9@gmail.com</string>
+    <string name="send_mail">Send mail</string>
+    <string name="characters">Characters</string>
+    <string name="marvel">Marvel</string>
+    <string name="error">An error occurred</string>
+    <string name="internet_not_available">Your internet is not available</string>
+    <string name="other_message_error">It seems that Thanos is doing bad things</string>
+    <string name="ok">OK</string>
+    <string name="modified">Modified:</string>
+</resources>
